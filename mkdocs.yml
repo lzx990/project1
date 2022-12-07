@@ -1,13 +1,12 @@
 site_name: lzx's wiki
 nav:
   - 主页: index.md
-  - 学习笔记: study-note.md
   - 比赛总结:
     - 前言: match/index.md
     - CSP2022: match/csp2022.md
 theme:
   name: 'material'
-  language: zh
+  language: en
   logo: assets/logo.png
   palette:
     primary: green
