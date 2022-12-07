@@ -3,6 +3,7 @@ nav:
     - 主页: index.md
     - 学习笔记: study-note.md
     - 比赛总结: match-note.md
+      - CSP2022: match-note/csp2022.md
 theme:
   name: 'material'
   language: zh
