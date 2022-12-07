@@ -1,7 +1,8 @@
 site_name: lzx's wiki
 nav:
-    - Home: index.md
-    - First: first.md
+    - 主页: index.md
+    - 学习笔记: study-note.md
+    - 比赛总结: match-node.md
 theme:
   name: 'material'
   language: zh
