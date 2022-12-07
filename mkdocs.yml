@@ -4,3 +4,19 @@ nav:
     - First: first.md
 theme:
   name: 'material'
+  language: zh
+  logo: assets/logo.png
+  palette:
+    primary: green
+    accent: light blue
+  features:
+    - navigation.tabs
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+plugins:
+  - search:
+      lang: 
+        - en
+        - zh
+copyright: Copyright &copy; 2022 lzx19
