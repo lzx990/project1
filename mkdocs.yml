@@ -2,7 +2,7 @@ site_name: lzx's wiki
 nav:
     - 主页: index.md
     - 学习笔记: study-note.md
-    - 比赛总结: match-node.md
+    - 比赛总结: match-note.md
 theme:
   name: 'material'
   language: zh
