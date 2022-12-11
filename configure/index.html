@@ -796,7 +796,13 @@
 <span class="normal">80</span>
 <span class="normal">81</span>
 <span class="normal">82</span>
-<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code>site_name: lzx&#39;s wiki
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span></pre></div></td><td class="code"><div><pre><span></span><code>site_name: lzx&#39;s wiki
 nav:
   - 简介:
     - 主页: index.md
@@ -808,16 +814,16 @@ nav:
     - 单调队列学习笔记: note/dddl.md
   - 比赛总结:
     - 前言: match/index.md
-    - 20220924 模拟赛解题报告: match/cfs20220924
-    - 20221004 模拟赛解题报告: match/cfs20221004
-    - 20221005 模拟赛解题报告: match/cfs20221005
-    - 20221006J 模拟赛解题报告: match/cfs20221006
+    - 20220924模拟赛解题报告: match/cfs20220924
+    - 20221004模拟赛解题报告: match/cfs20221004
+    - 20221005模拟赛解题报告: match/cfs20221005
+    - 20221006J模拟赛解题报告: match/cfs20221006
     - CF1748: match/cf1748.md
     - CSP2022: match/csp2022.md
   - 其他:
     - 前言: other/index.md
     - 五分钟学废上传测试数据: other/5min-to-make-test-data.md
-    - 关于 memset: other/about-memset
+    - 关于memset: other/about-memset
 theme:
   name: &#39;material&#39;
   language: en
@@ -848,7 +854,13 @@ markdown_extensions:
   - footnotes
   - meta
   - toc:
-      permalink: &quot;&quot;
+      permalink: true
+      title: 目录
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      permalink_title: Anchor link to this section for reference
       slugify: !!python/name:pymdownx.slugs.uslugify
   - pymdownx.arithmatex:
       generic: true
