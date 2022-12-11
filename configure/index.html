@@ -515,7 +515,7 @@
   
     <li class="md-nav__item">
       <a href="../match/cfs20220924" class="md-nav__link">
-        20220924 模拟赛解题报告
+        20220924模拟赛解题报告
       </a>
     </li>
   
@@ -529,7 +529,7 @@
   
     <li class="md-nav__item">
       <a href="../match/cfs20221004" class="md-nav__link">
-        20221004 模拟赛解题报告
+        20221004模拟赛解题报告
       </a>
     </li>
   
@@ -543,7 +543,7 @@
   
     <li class="md-nav__item">
       <a href="../match/cfs20221005" class="md-nav__link">
-        20221005 模拟赛解题报告
+        20221005模拟赛解题报告
       </a>
     </li>
   
@@ -557,7 +557,7 @@
   
     <li class="md-nav__item">
       <a href="../match/cfs20221006" class="md-nav__link">
-        20221006J 模拟赛解题报告
+        20221006J模拟赛解题报告
       </a>
     </li>
   
@@ -794,20 +794,7 @@
 <span class="normal">80</span>
 <span class="normal">81</span>
 <span class="normal">82</span>
-<span class="normal">83</span>
-<span class="normal">84</span>
-<span class="normal">85</span>
-<span class="normal">86</span>
-<span class="normal">87</span>
-<span class="normal">88</span>
-<span class="normal">89</span>
-<span class="normal">90</span>
-<span class="normal">91</span>
-<span class="normal">92</span>
-<span class="normal">93</span>
-<span class="normal">94</span>
-<span class="normal">95</span>
-<span class="normal">96</span></pre></div></td><td class="code"><div><pre><span></span><code>site_name: lzx&#39;s wiki
+<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code>site_name: lzx&#39;s wiki
 nav:
   - 简介:
     - 主页: index.md
@@ -819,10 +806,10 @@ nav:
     - 单调队列学习笔记: note/dddl.md
   - 比赛总结:
     - 前言: match/index.md
-    - 20220924模拟赛解题报告: match/cfs20220924
-    - 20221004模拟赛解题报告: match/cfs20221004
-    - 20221005模拟赛解题报告: match/cfs20221005
-    - 20221006J模拟赛解题报告: match/cfs20221006
+    - 20220924 模拟赛解题报告: match/cfs20220924
+    - 20221004 模拟赛解题报告: match/cfs20221004
+    - 20221005 模拟赛解题报告: match/cfs20221005
+    - 20221006J 模拟赛解题报告: match/cfs20221006
     - CF1748: match/cf1748.md
     - CSP2022: match/csp2022.md
   - 其他:
@@ -851,53 +838,40 @@ plugins:
         - zh
 copyright: Copyright &amp;copy; 2022 lzx
 markdown_extensions:
-  - abbr
   - admonition
-  - attr_list
+  - codehilite:
+      guess_lang: false
+      linenums: true
   - def_list
   - footnotes
-  - md_in_html
+  - meta
   - toc:
-    permalink: true
-    title: 目录
-    slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-    toc_depth: 3
-  - tables
+      permalink: &quot;&quot;
+      slugify: !!python/name:pymdownx.slugs.uslugify
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem
   - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
+  - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.highlight:
-      anchor_linenums: true
-      auto_title: true
       linenums: true
-      linenums_style: pymdownx-inline
-      anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.smartsymbols
+  - pymdownx.magiclink
+  - pymdownx.mark
   - pymdownx.snippets
-  - pymdownx.superfences
-    custom_fences:
-      - name: mermaid
-        class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-    alternate_style: true
-    slugify: !!python/object/apply:pymdownx.slugs.slugify
-      kwds:
-        case: lower
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
   - pymdownx.tasklist:
-    custom_checkbox: true
-    clickable_checkbox: true
-
+      custom_checkbox: true
+  - pymdownx.tilde
 
 extra_javascript:
   - javascripts/mathjax.js
