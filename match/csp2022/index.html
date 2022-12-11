@@ -531,9 +531,7 @@
       
         
 
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -542,7 +540,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -772,9 +770,7 @@
                   <div class="md-sidebar__inner">
                     
 
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -783,7 +779,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -924,19 +920,53 @@
                   
 
 
-<h1 id="csp2022-遥有此寄">CSP2022 遥有此寄<a class="headerlink" href="#csp2022-遥有此寄" title="Anchor link to this section for reference">&para;</a></h1>
-<h2 id="总述">总述<a class="headerlink" href="#总述" title="Anchor link to this section for reference">&para;</a></h2>
+<h1 id="csp2022-遥有此寄">CSP2022 遥有此寄<a class="headerlink" href="#csp2022-遥有此寄" title="Permanent link"></a></h1>
+<h2 id="总述">总述<a class="headerlink" href="#总述" title="Permanent link"></a></h2>
 <p>这次题目除了 T3 都还行</p>
 <p>但是……</p>
 <p>I LOVE CCF!</p>
-<h2 id="t1">T1<a class="headerlink" href="#t1" title="Anchor link to this section for reference">&para;</a></h2>
-<h3 id="做法">做法<a class="headerlink" href="#做法" title="Anchor link to this section for reference">&para;</a></h3>
+<h2 id="t1">T1<a class="headerlink" href="#t1" title="Permanent link"></a></h2>
+<h3 id="做法">做法<a class="headerlink" href="#做法" title="Permanent link"></a></h3>
 <p>很简单，暴力一下，大于 <span class="arithmatex">\(10^9\)</span> 退出即可。</p>
 <p><del>srds，I use the kasumi</del></p>
 <p>时间花费有<sub>~亿</sub>~点多。</p>
 <p><del>JYL 用 pow 都能对</del></p>
-<h3 id="代码powcpp">代码(pow.cpp)<a class="headerlink" href="#代码powcpp" title="Anchor link to this section for reference">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<h3 id="代码powcpp">代码(pow.cpp)<a class="headerlink" href="#代码powcpp" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="cp">#define LL long long</span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <span class="k">const</span><span class="w"> </span><span class="n">LL</span><span class="w"> </span><span class="n">MOD</span><span class="o">=</span><span class="p">(</span><span class="mf">1e9</span><span class="p">);</span><span class="w"></span>
@@ -971,9 +1001,9 @@
 <span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">kasumi</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div>
-<h2 id="t2">T2<a class="headerlink" href="#t2" title="Anchor link to this section for reference">&para;</a></h2>
-<h3 id="做法_1">做法<a class="headerlink" href="#做法_1" title="Anchor link to this section for reference">&para;</a></h3>
+</code></pre></div></td></tr></table></div>
+<h2 id="t2">T2<a class="headerlink" href="#t2" title="Permanent link"></a></h2>
+<h3 id="做法_1">做法<a class="headerlink" href="#做法_1" title="Permanent link"></a></h3>
 <p>变形后发现是二分。</p>
 <p>∵ 和图形大小原理差不多</p>
 <p>∴ 当在 <span class="arithmatex">\(p=q\)</span> 后，就会趋势由大变小</p>
@@ -983,8 +1013,46 @@
 <p><span class="arithmatex">\(\texttt{100pts}\)</span> -&gt; <span class="arithmatex">\(\texttt{0pt}\)</span></p>
 <p>化简后发现 <span class="arithmatex">\(p + q = n + 2 - e \times d\)</span></p>
 <p>二分这个即可，判断是否 <span class="arithmatex">\(= n\)</span></p>
-<h3 id="代码decodecpp">代码(decode.cpp)<a class="headerlink" href="#代码decodecpp" title="Anchor link to this section for reference">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<h3 id="代码decodecpp">代码(decode.cpp)<a class="headerlink" href="#代码decodecpp" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="cp">#define LL long long</span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">;</span><span class="w"></span>
@@ -1023,28 +1091,68 @@
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div>
-<h2 id="t3">T3<a class="headerlink" href="#t3" title="Anchor link to this section for reference">&para;</a></h2>
+</code></pre></div></td></tr></table></div>
+<h2 id="t3">T3<a class="headerlink" href="#t3" title="Permanent link"></a></h2>
 <p>大模拟，万恶之源</p>
 <p>骗了 <span class="arithmatex">\(\texttt{40pts}\)</span></p>
 <p>但是花了 <span class="arithmatex">\(\texttt{2h+}\)</span></p>
 <p>十分不划算</p>
 <p>导致 T2、T4 挂了</p>
-<h3 id="做法_2">做法<a class="headerlink" href="#做法_2" title="Anchor link to this section for reference">&para;</a></h3>
+<h3 id="做法_2">做法<a class="headerlink" href="#做法_2" title="Permanent link"></a></h3>
 <p>我不知道</p>
-<h3 id="代码exprcpp">代码(expr.cpp)<a class="headerlink" href="#代码exprcpp" title="Anchor link to this section for reference">&para;</a></h3>
+<h3 id="代码exprcpp">代码(expr.cpp)<a class="headerlink" href="#代码exprcpp" title="Permanent link"></a></h3>
 <p>我更不会</p>
 <p><del>pr我爱你</del></p>
-<h2 id="t4">T4<a class="headerlink" href="#t4" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="t4">T4<a class="headerlink" href="#t4" title="Permanent link"></a></h2>
 <p>一个动态编程题，但我只想到 <span class="arithmatex">\(\texttt{60pts}\)</span> 的动态编程做法</p>
-<h3 id="做法_3">做法<a class="headerlink" href="#做法_3" title="Anchor link to this section for reference">&para;</a></h3>
+<h3 id="做法_3">做法<a class="headerlink" href="#做法_3" title="Permanent link"></a></h3>
 <p>设 <span class="arithmatex">\(\texttt{dp[i][k]}\)</span> 为当前为第 <span class="arithmatex">\(i\)</span> 个点，用了额外的 <span class="arithmatex">\(k\)</span> 个 <del>外挂</del> 整点。</p>
 <p><span class="arithmatex">\(\texttt{dp[i][k]} = \max \{\texttt{dp[j][k-d]}\}\)</span> (<span class="arithmatex">\(1 \le j &lt; i\)</span>，<span class="arithmatex">\(d\)</span> 为两点间需要用到的额外的 <del>外挂</del> 整点)</p>
 <p>初始时 <span class="arithmatex">\(\texttt{dp[i][k]}=1\)</span></p>
 <p><span class="arithmatex">\(\texttt{DP}\)</span> 前要排序，就是把两个点，如果 <span class="arithmatex">\(s1\)</span> 能搁到 <span class="arithmatex">\(s2\)</span> 就不用变，也就是 
 <span class="arithmatex">\(s1.x+s1.y&lt;s2.x+s2.y\)</span></p>
-<h3 id="代码pointcpp">代码(point.cpp)<a class="headerlink" href="#代码pointcpp" title="Anchor link to this section for reference">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<h3 id="代码pointcpp">代码(point.cpp)<a class="headerlink" href="#代码pointcpp" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <span class="kt">int</span><span class="w"> </span><span class="n">ans</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">kk</span><span class="p">,</span><span class="n">f</span><span class="p">[</span><span class="mi">510</span><span class="p">][</span><span class="mi">110</span><span class="p">];</span><span class="w"></span>
 <span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"></span>
@@ -1085,8 +1193,8 @@
 <span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">ans</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div>
-<h2 id="总结">总结<a class="headerlink" href="#总结" title="Anchor link to this section for reference">&para;</a></h2>
+</code></pre></div></td></tr></table></div>
+<h2 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link"></a></h2>
 <p>这次比赛出了亿点点大失误，当初应该 <span class="arithmatex">\(\texttt{T1-&gt;T2-&gt;T4}\)</span> 然后检查，再象征性地骗点 <span class="arithmatex">\(\texttt{T3}\)</span> 的分。</p>
 <p>我爱 CCF</p>
 <p>赞美太阳!</p>
@@ -1176,12 +1284,6 @@
     
     
       <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
     

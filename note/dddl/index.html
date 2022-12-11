@@ -399,9 +399,7 @@
       
         
 
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -410,7 +408,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -657,9 +655,7 @@
                   <div class="md-sidebar__inner">
                     
 
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -668,7 +664,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -694,13 +690,55 @@
                   
 
 
-<h1 id="单调队列学习笔记">单调队列学习笔记<a class="headerlink" href="#单调队列学习笔记" title="Anchor link to this section for reference">&para;</a></h1>
+<h1 id="单调队列学习笔记">单调队列学习笔记<a class="headerlink" href="#单调队列学习笔记" title="Permanent link"></a></h1>
 <p><span class="arithmatex">\(\texttt{如果一个选手比你小还比你强，你就可以退役了。--单调队列}\)</span></p>
 <p>维护单调性，弹出过期</p>
-<h2 id="luogu-p1886-滑动窗口-模板单调队列"><a href="https://www.luogu.com.cn/problem/P1886">Luogu P1886 滑动窗口 /【模板】单调队列</a><a class="headerlink" href="#luogu-p1886-滑动窗口-模板单调队列" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="luogu-p1886-滑动窗口-模板单调队列"><a href="https://www.luogu.com.cn/problem/P1886">Luogu P1886 滑动窗口 /【模板】单调队列</a><a class="headerlink" href="#luogu-p1886-滑动窗口-模板单调队列" title="Permanent link"></a></h2>
 <p>超过 <span class="arithmatex">\(k\)</span> 弹出，如果当前更优就将队列里比它不优的弹出，最后 <span class="arithmatex">\(\texttt{push}\)</span> 进去它</p>
 <p>按小和大各做两遍即可</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">M</span><span class="o">=</span><span class="mf">1e6</span><span class="o">+</span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
 <span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">M</span><span class="p">],</span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">q</span><span class="p">[</span><span class="n">M</span><span class="p">];</span><span class="w"> </span>
@@ -743,7 +781,7 @@
 <span class="cm">NOTES:</span>
 
 <span class="cm">*/</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -825,12 +863,6 @@
     
     
       <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
     

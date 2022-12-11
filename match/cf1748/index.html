@@ -517,9 +517,7 @@
       
         
 
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -528,7 +526,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -752,9 +750,7 @@
                   <div class="md-sidebar__inner">
                     
 
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -763,7 +759,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -884,15 +880,40 @@
                   
 
 
-<h1 id="cf1748-总结">CF1748 总结<a class="headerlink" href="#cf1748-总结" title="Anchor link to this section for reference">&para;</a></h1>
-<h2 id="a">A<a class="headerlink" href="#a" title="Anchor link to this section for reference">&para;</a></h2>
-<h3 id="题意">题意<a class="headerlink" href="#题意" title="Anchor link to this section for reference">&para;</a></h3>
+<h1 id="cf1748-总结">CF1748 总结<a class="headerlink" href="#cf1748-总结" title="Permanent link"></a></h1>
+<h2 id="a">A<a class="headerlink" href="#a" title="Permanent link"></a></h2>
+<h3 id="题意">题意<a class="headerlink" href="#题意" title="Permanent link"></a></h3>
 <p>用 <span class="arithmatex">\(n\)</span> 个编号分别为 <span class="arithmatex">\(1\)</span> ~ <span class="arithmatex">\(n\)</span> 的长为 <span class="arithmatex">\(\lfloor \frac i 2 \rfloor\)</span> ，宽为 <span class="arithmatex">\(1\)</span> 的长方形拼一个正方形。</p>
 <p>要拼成的正方形边长尽可能大，<strong>但是不能旋转</strong>，可以不用到所有长方形。</p>
-<h3 id="思路">思路<a class="headerlink" href="#思路" title="Anchor link to this section for reference">&para;</a></h3>
+<h3 id="思路">思路<a class="headerlink" href="#思路" title="Permanent link"></a></h3>
 <p>找规律，发现答案就是长方形数（ <span class="arithmatex">\(n\)</span> ）除以二（下取整）</p>
-<h3 id="代码">代码<a class="headerlink" href="#代码" title="Anchor link to this section for reference">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<h3 id="代码">代码<a class="headerlink" href="#代码" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <span class="kt">int</span><span class="w"> </span><span class="n">T</span><span class="p">;</span><span class="w"></span>
 <span class="kt">void</span><span class="w"> </span><span class="nf">work</span><span class="p">()</span><span class="w"></span>
@@ -918,12 +939,12 @@
 <span class="cm">NOTES:</span>
 
 <span class="cm">*/</span><span class="w"></span>
-</code></pre></div>
-<h2 id="b">B<a class="headerlink" href="#b" title="Anchor link to this section for reference">&para;</a></h2>
-<h3 id="题意_1">题意<a class="headerlink" href="#题意_1" title="Anchor link to this section for reference">&para;</a></h3>
+</code></pre></div></td></tr></table></div>
+<h2 id="b">B<a class="headerlink" href="#b" title="Permanent link"></a></h2>
+<h3 id="题意_1">题意<a class="headerlink" href="#题意_1" title="Permanent link"></a></h3>
 <p>输出每个串（只包括 <code>0</code> 到 <code>9</code>）中多样化的字串。</p>
 <p>多样化：每个字符出现次数不超过不同字符数量。</p>
-<h3 id="思路_1">思路<a class="headerlink" href="#思路_1" title="Anchor link to this section for reference">&para;</a></h3>
+<h3 id="思路_1">思路<a class="headerlink" href="#思路_1" title="Permanent link"></a></h3>
 <p>出现次数只要看最多的即可，因为最多的不超过小的也不会，超过了那就直接不行。</p>
 <p>由于长度最多有 <span class="arithmatex">\(10^5\)</span></p>
 <p>所以考虑前缀和优化，枚举起始点 <span class="arithmatex">\(i\)</span>，然后 <span class="arithmatex">\(j\)</span> 从 <span class="arithmatex">\(i\)</span> 枚举累加并判断即可。</p>
@@ -933,8 +954,49 @@
 <p>所以每个出现次数最多为 <span class="arithmatex">\(10\)</span></p>
 <p><span class="arithmatex">\(10\)</span> 个数也就是 <span class="arithmatex">\(10 \times 10 = 100\)</span> 个</p>
 <p>所以只要 <span class="arithmatex">\(j\)</span> 从 <span class="arithmatex">\(i\)</span> 开始枚举到 <span class="arithmatex">\(min\{i+99,n\}\)</span> 即可</p>
-<h3 id="代码_1">代码<a class="headerlink" href="#代码_1" title="Anchor link to this section for reference">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<h3 id="代码_1">代码<a class="headerlink" href="#代码_1" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <span class="kt">int</span><span class="w"> </span><span class="n">T</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span><span class="n">maxn</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">ans</span><span class="p">;</span><span class="w"></span>
 <span class="kt">char</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="mi">100010</span><span class="p">];</span><span class="w"></span>
@@ -976,14 +1038,14 @@
 <span class="cm">NOTES:</span>
 
 <span class="cm">*/</span><span class="w"></span>
-</code></pre></div>
-<h2 id="c">C<a class="headerlink" href="#c" title="Anchor link to this section for reference">&para;</a></h2>
-<h3 id="题意_2">题意<a class="headerlink" href="#题意_2" title="Anchor link to this section for reference">&para;</a></h3>
+</code></pre></div></td></tr></table></div>
+<h2 id="c">C<a class="headerlink" href="#c" title="Permanent link"></a></h2>
+<h3 id="题意_2">题意<a class="headerlink" href="#题意_2" title="Permanent link"></a></h3>
 <p>给你一个数组 <span class="arithmatex">\(a\)</span></p>
 <p>问你一共有多少个 <span class="arithmatex">\(i (1 \le i \le n)\)</span> 满足 <span class="arithmatex">\(\sum_{j=1}^{i} = 0\)</span></p>
 <p>其中你可以将数组中为 <span class="arithmatex">\(0\)</span> 的修改成任意数（不限次数）</p>
 <p>问最多能获得多少个那样的 <span class="arithmatex">\(i\)</span></p>
-<h3 id="思路_2">思路<a class="headerlink" href="#思路_2" title="Anchor link to this section for reference">&para;</a></h3>
+<h3 id="思路_2">思路<a class="headerlink" href="#思路_2" title="Permanent link"></a></h3>
 <p>数据过大！</p>
 <p>DP？贪心？</p>
 <p>都有后效性，但没有前效性！</p>
@@ -994,8 +1056,105 @@
 <p>将最多次数的累加到答案中</p>
 <p>对于第一个 <span class="arithmatex">\(0\)</span> 之前的（或者一个 <span class="arithmatex">\(0\)</span> 都没有）</p>
 <p>我们可以直接累加统计和 <span class="arithmatex">\(0\)</span> 的个数</p>
-<h3 id="代码_2">代码<a class="headerlink" href="#代码_2" title="Anchor link to this section for reference">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<h3 id="代码_2">代码<a class="headerlink" href="#代码_2" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span>
+<span class="normal">96</span>
+<span class="normal">97</span>
+<span class="normal">98</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="cp">#define int long long</span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 <span class="kt">int</span><span class="w"> </span><span class="n">T</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="mi">200010</span><span class="p">],</span><span class="n">lst</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">st</span><span class="p">[</span><span class="mi">200010</span><span class="p">],</span><span class="n">top</span><span class="p">;</span><span class="w"></span>
@@ -1093,7 +1252,7 @@
 
 
 <span class="cm">*/</span><span class="w"></span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -1175,12 +1334,6 @@
     
     
       <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
     
