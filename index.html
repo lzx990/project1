@@ -174,8 +174,56 @@
   
   
     <li class="md-tabs__item">
+      <a href="sol/" class="md-tabs__link">
+        题解
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="note/" class="md-tabs__link">
+        学习笔记
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="match/" class="md-tabs__link">
         比赛总结
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="other/" class="md-tabs__link">
+        其他
       </a>
     </li>
   
@@ -260,12 +308,108 @@
       
       
         <label class="md-nav__link" for="__nav_2">
+          题解
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="题解" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          题解
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sol/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          学习笔记
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="学习笔记" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          学习笔记
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="note/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
           比赛总结
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="比赛总结" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           比赛总结
         </label>
@@ -305,6 +449,54 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          其他
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="其他" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          其他
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -318,9 +510,7 @@
                   <div class="md-sidebar__inner">
                     
 
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -343,74 +533,6 @@
 <h1 id="欢迎来到-lzxs-wiki">欢迎来到 lzx's wiki<a class="headerlink" href="#欢迎来到-lzxs-wiki" title="Anchor link to this section for reference">&para;</a></h1>
 <p>本项目启动于 2022 年 12 月 7 日</p>
 <p>目前正在开发</p>
-<p>配置文档</p>
-<div class="highlight"><pre><span></span><code>site_name: lzx&#39;s wiki
-nav:
-  - 主页: index.md
-  - 比赛总结:
-    - 前言: match/index.md
-    - CSP2022: match/csp2022.md
-theme:
-  name: &#39;material&#39;
-  language: en
-  logo: assets/logo.png
-  palette:
-    primary: green
-    accent: light blue
-  features:
-    - navigation.tabs
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-plugins:
-  - search:
-      lang: 
-        - en
-        - zh
-copyright: Copyright &amp;copy; 2022 lzx19
-markdown_extensions:
-  - pymdownx.highlight:
-      use_pygments: true
-  - pymdownx.superfences
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - tables
-  - toc:
-      permalink: true
-      title: On this page
-      permalink: true
-      permalink_title: Anchor link to this section for reference
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-      toc_depth: 3
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.details
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-</code></pre></div>
 
 
 
@@ -432,7 +554,7 @@ extra_javascript:
       
       
         
-        <a href="match/" class="md-footer__link md-footer__link--next" aria-label="Next: 前言" rel="next">
+        <a href="sol/" class="md-footer__link md-footer__link--next" aria-label="Next: 前言" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -453,7 +575,7 @@ extra_javascript:
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 lzx19
+      Copyright &copy; 2022 lzx
     </div>
   
   
