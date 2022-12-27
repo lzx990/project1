@@ -13,7 +13,7 @@
     
     
       
-        <title>单调队列学习笔记 - lzx's wiki</title>
+        <title>洛谷 P7632 - lzx's wiki</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#单调队列学习笔记" class="md-skip">
+        <a href="#luogu-p7632-题解" class="md-skip">
           跳转至
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              单调队列学习笔记
+              洛谷 P7632
             
           </span>
         </div>
@@ -170,13 +170,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../sol/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         题解
       </a>
     </li>
@@ -192,7 +194,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../../note/" class="md-tabs__link">
         学习笔记
       </a>
     </li>
@@ -338,12 +340,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -369,7 +373,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../sol/">题解</a>
+          <a href="../">题解</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -390,11 +394,68 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../sol/lg-p7632/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          洛谷 P7632
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         洛谷 P7632
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#一思路" class="md-nav__link">
+    一.思路
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二重要点" class="md-nav__link">
+    二.重要点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三实现" class="md-nav__link">
+    三.实现
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -406,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sol/lg-p7754/" class="md-nav__link">
+      <a href="../lg-p7754/" class="md-nav__link">
         洛谷 P7754
       </a>
     </li>
@@ -420,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sol/lg-p8090/" class="md-nav__link">
+      <a href="../lg-p8090/" class="md-nav__link">
         洛谷 P8090
       </a>
     </li>
@@ -434,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sol/sp-867/" class="md-nav__link">
+      <a href="../sp-867/" class="md-nav__link">
         SPOJ 867
       </a>
     </li>
@@ -448,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sol/sp-1163/" class="md-nav__link">
+      <a href="../sp-1163/" class="md-nav__link">
         SPOJ 1163
       </a>
     </li>
@@ -462,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sol/sp-13888/" class="md-nav__link">
+      <a href="../sp-13888/" class="md-nav__link">
         SPOJ 13888
       </a>
     </li>
@@ -501,7 +562,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">学习笔记</a>
+          <a href="../../note/">学习笔记</a>
           
         </div>
       
@@ -789,8 +850,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#luogu-p1886" class="md-nav__link">
-    Luogu P1886
+  <a href="#一思路" class="md-nav__link">
+    一.思路
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二重要点" class="md-nav__link">
+    二.重要点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三实现" class="md-nav__link">
+    三.实现
   </a>
   
 </li>
@@ -810,12 +885,16 @@
                   
 
 
-<h1 id="单调队列学习笔记">单调队列学习笔记<a class="headerlink" href="#单调队列学习笔记" title="Anchor link to this section for reference">&para;</a></h1>
-<p><span class="arithmatex">\(\text{\color{red}如果一个选手比你小还比你强，你就可以退役了。--单调队列}\)</span></p>
-<p>维护单调性，弹出过期</p>
-<h2 id="luogu-p1886"><a href="https://www.luogu.com.cn/problem/P1886">Luogu P1886</a><a class="headerlink" href="#luogu-p1886" title="Anchor link to this section for reference">&para;</a></h2>
-<p>超过 <span class="arithmatex">\(k\)</span> 弹出，如果当前更优就将队列里比它不优的弹出，最后 <span class="arithmatex">\(\texttt{push}\)</span> 进去它</p>
-<p>按小和大各做两遍即可</p>
+<h1 id="luogu-p7632-题解">Luogu P7632 题解<a class="headerlink" href="#luogu-p7632-题解" title="Anchor link to this section for reference">&para;</a></h1>
+<h2 id="一思路">一.思路<a class="headerlink" href="#一思路" title="Anchor link to this section for reference">&para;</a></h2>
+<p>我们可以先把时间换成以<strong>秒</strong>为单位的，然后在枚举每一秒时谁领先。</p>
+<h2 id="二重要点">二.重要点<a class="headerlink" href="#二重要点" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>我们可以用 string 读入时间，再用一个函数以<strong>秒</strong>为单位提取出来（在程序中的函数名: <code>tiqu</code> ）。</li>
+<li>如果双方分数是一样的，那么谁都不领先（在程序中的函数名: out_put ）。</li>
+<li>输出的时候要填充 <span class="arithmatex">\(0\)</span> ，就建一个函数。</li>
+</ul>
+<h2 id="三实现">三.实现<a class="headerlink" href="#三实现" title="Anchor link to this section for reference">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -850,41 +929,39 @@
 <span class="normal">32</span>
 <span class="normal">33</span>
 <span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
-<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">M</span><span class="o">=</span><span class="mf">1e6</span><span class="o">+</span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">M</span><span class="p">],</span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">q</span><span class="p">[</span><span class="n">M</span><span class="p">];</span><span class="w"> </span>
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="o">&amp;</span><span class="n">k</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">fen</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">shijian</span><span class="p">[</span><span class="mi">110</span><span class="p">][</span><span class="mi">3</span><span class="p">],</span><span class="n">ta</span><span class="p">,</span><span class="n">tb</span><span class="p">;</span><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="p">;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tiqu</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">th</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">player</span><span class="p">){</span><span class="c1">// x -&gt;读入的时间 th -&gt;第几个(i) player -&gt;哪一方的球了</span>
+<span class="w">    </span><span class="n">shijian</span><span class="p">[</span><span class="n">th</span><span class="p">][</span><span class="n">player</span><span class="p">]</span><span class="o">=</span><span class="kt">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="mi">-48</span><span class="p">)</span><span class="o">*</span><span class="mi">600</span><span class="o">+</span><span class="kt">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="mi">-48</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="o">+</span><span class="kt">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="mi">-48</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="kt">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="mi">-48</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="c1">//转格式( x[0] 是分钟的十位，x[1] 是分钟的个位，x[3] 是秒的十位，x[4]是秒的个位)</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">out_put</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="p">){</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="n">t</span><span class="o">/</span><span class="mi">60</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">t</span><span class="o">%</span><span class="mi">60</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">10</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="mi">0</span><span class="p">;</span><span class="c1">//若 x (分钟)是个位数，要输出 &#39;0&#39;</span>
+<span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">x</span><span class="o">&lt;&lt;</span><span class="s">&quot;:&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="mi">10</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="mi">0</span><span class="p">;</span><span class="c1">//若 y (秒钟)是个位数，也要输出 &#39;0&#39;</span>
+<span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">y</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="c1">//输出 </span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span><span class="w"></span>
+<span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
+<span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">p</span><span class="o">&gt;&gt;</span><span class="n">s</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">op</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">op</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">tiqu</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">p</span><span class="p">);</span><span class="c1">//转换为以秒为单位的时间</span>
+<span class="w">        </span><span class="n">shijian</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">op</span><span class="p">]</span><span class="o">=</span><span class="mi">4800</span><span class="p">;</span><span class="c1">//为了防止在 0 秒进球，然后有BUG</span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;=</span><span class="n">r</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">q</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">+</span><span class="n">k</span><span class="o">&lt;=</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">l</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;=</span><span class="n">r</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">q</span><span class="p">[</span><span class="n">r</span><span class="p">]]</span><span class="o">&gt;=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="n">r</span><span class="o">--</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">q</span><span class="p">[</span><span class="o">++</span><span class="n">r</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;=</span><span class="n">k</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">q</span><span class="p">[</span><span class="n">l</span><span class="p">]]);</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;=</span><span class="n">r</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">q</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">+</span><span class="n">k</span><span class="o">&lt;=</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">l</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;=</span><span class="n">r</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">q</span><span class="p">[</span><span class="n">r</span><span class="p">]]</span><span class="o">&lt;=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="n">r</span><span class="o">--</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">q</span><span class="p">[</span><span class="o">++</span><span class="n">r</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;=</span><span class="n">k</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">q</span><span class="p">[</span><span class="n">l</span><span class="p">]]);</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">48</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
+<span class="w">        </span><span class="n">fen</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">fen</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">fen</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">shijian</span><span class="p">[</span><span class="n">fen</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">fen</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">shijian</span><span class="p">[</span><span class="n">fen</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="mi">2</span><span class="p">]</span><span class="o">==</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">fen</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">       </span><span class="c1">//判断在这一秒是否得分</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">fen</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;</span><span class="n">fen</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="w"> </span><span class="n">ta</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">fen</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">&gt;</span><span class="n">fen</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="w"> </span><span class="n">tb</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//判断分数上的领先</span>
+<span class="w">    </span><span class="p">}</span><span class="c1">//枚举每 1 秒</span>
+<span class="w">    </span><span class="n">out_put</span><span class="p">(</span><span class="n">ta</span><span class="p">);</span><span class="c1">//输出 a 方的领先时间</span>
+<span class="w">    </span><span class="n">out_put</span><span class="p">(</span><span class="n">tb</span><span class="p">);</span><span class="c1">//输出 b 方的领先时间</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
@@ -908,6 +985,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: 前言" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              前言
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lg-p7754/" class="md-footer__link md-footer__link--next" aria-label="下一页: 洛谷 P7754" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              洛谷 P7754
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
