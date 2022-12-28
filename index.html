@@ -806,6 +806,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#颜色主题" class="md-nav__link">
+    颜色主题
+  </a>
+  
+    <nav class="md-nav" aria-label="颜色主题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-colors-主色" class="md-nav__link">
+    Primary colors 主色
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accent-colors-辅助色" class="md-nav__link">
+    Accent colors 辅助色
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -822,7 +857,79 @@
 <h1 id="欢迎来到-lzxs-wiki">欢迎来到 lzx's wiki<a class="headerlink" href="#欢迎来到-lzxs-wiki" title="Anchor link to this section for reference">&para;</a></h1>
 <p>本项目启动于 2022 年 12 月 7 日</p>
 <p>目前正在开发</p>
-<p><img alt="" src="https://pic.imgdb.cn/item/63a99e4a08b683016329e5b6.gif" /></p>
+<h2 id="颜色主题">颜色主题<a class="headerlink" href="#颜色主题" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="primary-colors-主色">Primary colors 主色<a class="headerlink" href="#primary-colors-主色" title="Anchor link to this section for reference">&para;</a></h3>
+<blockquote>
+<p>默认为 <code>green</code>,新年期间 <code>pink</code></p>
+</blockquote>
+<p>点击色块可更换主题的主色</p>
+<div id="color-button">
+<button data-md-color-primary="red">Red</button>
+<button data-md-color-primary="pink">Pink</button>
+<button data-md-color-primary="purple">Purple</button>
+<button data-md-color-primary="deep-purple">Deep Purple</button>
+<button data-md-color-primary="indigo">Indigo</button>
+<button data-md-color-primary="blue">Blue</button>
+<button data-md-color-primary="light-blue">Light Blue</button>
+<button data-md-color-primary="cyan">Cyan</button>
+<button data-md-color-primary="teal">Teal</button>
+<button data-md-color-primary="green">Green</button>
+<button data-md-color-primary="light-green">Light Green</button>
+<button data-md-color-primary="lime">Lime</button>
+<button data-md-color-primary="yellow">Yellow</button>
+<button data-md-color-primary="amber">Amber</button>
+<button data-md-color-primary="orange">Orange</button>
+<button data-md-color-primary="deep-orange">Deep Orange</button>
+<button data-md-color-primary="brown">Brown</button>
+<button data-md-color-primary="grey">Grey</button>
+<button data-md-color-primary="blue-grey">Blue Grey</button>
+<button data-md-color-primary="white">White</button>
+</div>
+
+<script>
+  var buttons = document.querySelectorAll("button[data-md-color-primary]");
+  Array.prototype.forEach.call(buttons, function(button) {
+    button.addEventListener("click", function() {
+      document.body.dataset.mdColorPrimary = this.dataset.mdColorPrimary;
+      localStorage.setItem("data-md-color-primary",this.dataset.mdColorPrimary);
+    })
+  })
+</script>
+
+<h3 id="accent-colors-辅助色">Accent colors 辅助色<a class="headerlink" href="#accent-colors-辅助色" title="Anchor link to this section for reference">&para;</a></h3>
+<blockquote>
+<p>默认为 <code>light blue</code>,新年期间 <code>red</code></p>
+</blockquote>
+<p>点击色块更换主题的辅助色</p>
+<div id="color-button">
+<button data-md-color-accent="red">Red</button>
+<button data-md-color-accent="pink">Pink</button>
+<button data-md-color-accent="purple">Purple</button>
+<button data-md-color-accent="deep-purple">Deep Purple</button>
+<button data-md-color-accent="indigo">Indigo</button>
+<button data-md-color-accent="blue">Blue</button>
+<button data-md-color-accent="light-blue">Light Blue</button>
+<button data-md-color-accent="cyan">Cyan</button>
+<button data-md-color-accent="teal">Teal</button>
+<button data-md-color-accent="green">Green</button>
+<button data-md-color-accent="light-green">Light Green</button>
+<button data-md-color-accent="lime">Lime</button>
+<button data-md-color-accent="yellow">Yellow</button>
+<button data-md-color-accent="amber">Amber</button>
+<button data-md-color-accent="orange">Orange</button>
+<button data-md-color-accent="deep-orange">Deep Orange</button>
+</div>
+
+<script>
+  var buttons = document.querySelectorAll("button[data-md-color-accent]");
+  Array.prototype.forEach.call(buttons, function(button) {
+    button.addEventListener("click", function() {
+      document.body.dataset.mdColorAccent = this.dataset.mdColorAccent;
+      localStorage.setItem("data-md-color-accent",this.dataset.mdColorAccent);
+    })
+  })
+
+![](https://pic.imgdb.cn/item/63a99e4a08b683016329e5b6.gif)
 
 
 
