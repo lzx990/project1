@@ -620,6 +620,26 @@
     差分
   </a>
   
+    <nav class="md-nav" aria-label="差分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#04luogu-p2367-语文成绩" class="md-nav__link">
+    04.Luogu P2367 语文成绩
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -944,6 +964,26 @@
     差分
   </a>
   
+    <nav class="md-nav" aria-label="差分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#04luogu-p2367-语文成绩" class="md-nav__link">
+    04.Luogu P2367 语文成绩
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1182,6 +1222,62 @@
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
 <h2 id="差分">差分<a class="headerlink" href="#差分" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="04luogu-p2367-语文成绩">04.<a href="https://www.luogu.com.cn/problem/P2367">Luogu P2367 语文成绩</a><a class="headerlink" href="#04luogu-p2367-语文成绩" title="Anchor link to this section for reference">&para;</a></h3>
+<p>维护差分数组 <span class="arithmatex">\(c\)</span></p>
+<p>每次 <span class="arithmatex">\(c_l+z,c_{r+1}+z\)</span></p>
+<p>然后求差分数组前缀和，并累加 <span class="arithmatex">\(a_i\)</span></p>
+<p>遍历求最小值</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="mi">5000010</span><span class="p">],</span><span class="n">c</span><span class="p">[</span><span class="mi">5000010</span><span class="p">],</span><span class="n">ans</span><span class="o">=</span><span class="n">INT_MAX</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="o">&amp;</span><span class="n">p</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">p</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">l</span><span class="p">,</span><span class="o">&amp;</span><span class="n">r</span><span class="p">,</span><span class="o">&amp;</span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">c</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">+=</span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">c</span><span class="p">[</span><span class="n">r</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-=</span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="n">ans</span><span class="o">=</span><span class="n">min</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">ans</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">ans</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_1"><a class="headerlink" href="#_1" title="Anchor link to this section for reference">&para;</a></h3>
 
 
 
