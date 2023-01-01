@@ -952,7 +952,7 @@
 <h1 id="第-3-章-分治与倍增">第 3 章 分治与倍增<a class="headerlink" href="#第-3-章-分治与倍增" title="Anchor link to this section for reference">&para;</a></h1>
 <h2 id="归并排序与快速幂">归并排序与快速幂<a class="headerlink" href="#归并排序与快速幂" title="Anchor link to this section for reference">&para;</a></h2>
 <h3 id="01luogu-p1177-快速排序">01.<a href="https://www.luogu.com.cn/problem/P1177">Luogu P1177 快速排序</a><a class="headerlink" href="#01luogu-p1177-快速排序" title="Anchor link to this section for reference">&para;</a></h3>
-<p>每次分为两个为 <span class="arithmatex">\(\frac n 2\)</span> 和 $\frac {n+1} 2 $ 的子序列，分别先进行排序，然后合并</p>
+<p>每次分为两个为 <span class="arithmatex">\(\frac n 2\)</span> 和 <span class="arithmatex">\(\frac {n+1} 2\)</span> 的子序列，分别先进行排序，然后合并</p>
 <p>这样递归直到长度为 <span class="arithmatex">\(1\)</span></p>
 <p>时间复杂度为 <span class="arithmatex">\(T(n)=2T(\frac n 2)+O(n)=O(n~log~n)\)</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
