@@ -358,13 +358,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    Tree
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mkdocsyml" class="md-nav__link">
     \mkdocs.yml
   </a>
@@ -554,6 +547,8 @@
         
           
         
+          
+        
       
       
         
@@ -598,6 +593,20 @@
     <li class="md-nav__item">
       <a href="../note/lgsj2/" class="md-nav__link">
         洛谷深进第 2 章
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note/lgsj3/" class="md-nav__link">
+        洛谷深进第 3 章
       </a>
     </li>
   
@@ -879,13 +888,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    Tree
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mkdocsyml" class="md-nav__link">
     \mkdocs.yml
   </a>
@@ -908,71 +910,6 @@
 
 
 <h1 id="配置">配置<a class="headerlink" href="#配置" title="Anchor link to this section for reference">&para;</a></h1>
-<h2 id="tree">Tree<a class="headerlink" href="#tree" title="Anchor link to this section for reference">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code>├─docs
-│  ├─assets
-│  ├─javascripts
-│  ├─match
-│  ├─note
-│  ├─other
-│  └─sol
-└─site
-    ├─assets
-    │  ├─images
-    │  ├─javascripts
-    │  │  ├─extra
-    │  │  ├─lunr
-    │  │  │  └─min
-    │  │  └─workers
-    │  └─stylesheets
-    ├─configure
-    ├─javascripts
-    ├─match
-    │  ├─cf1748
-    │  ├─cfs20220924
-    │  ├─cfs20221004
-    │  ├─cfs20221005
-    │  ├─cfs20221006
-    │  └─csp2022
-    ├─note
-    │  └─dddl
-    ├─other
-    │  ├─5min-to-make-test-data
-    │  └─about-memset
-    ├─search
-    └─sol
-</code></pre></div></td></tr></table></div>
 <h2 id="mkdocsyml">\mkdocs.yml<a class="headerlink" href="#mkdocsyml" title="Anchor link to this section for reference">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -1068,7 +1005,10 @@
 <span class="normal">92</span>
 <span class="normal">93</span>
 <span class="normal">94</span>
-<span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code>site_name: lzx&#39;s wiki
+<span class="normal">95</span>
+<span class="normal">96</span>
+<span class="normal">97</span>
+<span class="normal">98</span></pre></div></td><td class="code"><div><pre><span></span><code>site_name: lzx&#39;s wiki,HELLO 2023!
 nav:
   - 简介:
     - 主页: index.md
@@ -1083,6 +1023,9 @@ nav:
     - SPOJ 13888: sol/sp-13888.md
   - 学习笔记:
     - 前言: note/index.md
+    - 洛谷深进第 1 章: note/lgsj1.md
+    - 洛谷深进第 2 章: note/lgsj2.md
+    - 洛谷深进第 3 章: note/lgsj3.md
   - 比赛总结:
     - 前言: match/index.md
     - CF1748: match/cf1748.md
@@ -1099,7 +1042,7 @@ nav:
 theme:
   name: &#39;material&#39;
   language: zh
-  logo: assets/logo.png
+  logo: https://cdn.luogu.com.cn/upload/usericon/426624.png
   palette:
     primary: green
     accent: light blue
