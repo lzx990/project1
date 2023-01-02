@@ -727,6 +727,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#e05luogu-p1578-奶牛浴场" class="md-nav__link">
+    E05.Luogu P1578 奶牛浴场
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e06luogu-p3467-pla-postering" class="md-nav__link">
+    E06.Luogu P3467 PLA-Postering
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1197,6 +1211,20 @@
           <li class="md-nav__item">
   <a href="#e04luogu-p7910-插入排序" class="md-nav__link">
     E04.Luogu P7910 插入排序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e05luogu-p1578-奶牛浴场" class="md-nav__link">
+    E05.Luogu P1578 奶牛浴场
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e06luogu-p3467-pla-postering" class="md-nav__link">
+    E06.Luogu P3467 PLA-Postering
   </a>
   
 </li>
@@ -2463,6 +2491,154 @@
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
+<h3 id="e05luogu-p1578-奶牛浴场">E05.<a href="https://www.luogu.com.cn/problem/P1578">Luogu P1578 奶牛浴场</a><a class="headerlink" href="#e05luogu-p1578-奶牛浴场" title="Anchor link to this section for reference">&para;</a></h3>
+<p>一定有点和障碍点重合，且四边无法扩展</p>
+<p>从左往右</p>
+<p>从右往左</p>
+<p>特判长无限的</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">L</span><span class="p">,</span><span class="n">W</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">ans</span><span class="p">;</span><span class="w"></span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="n">a</span><span class="p">[</span><span class="mi">5010</span><span class="p">];</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="nf">cmp1</span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="n">s1</span><span class="p">,</span><span class="n">node</span><span class="w"> </span><span class="n">s2</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">x</span><span class="o">==</span><span class="n">s2</span><span class="p">.</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">y</span><span class="o">&lt;</span><span class="n">s2</span><span class="p">.</span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">x</span><span class="o">&lt;</span><span class="n">s2</span><span class="p">.</span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="nf">cmp2</span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="n">s1</span><span class="p">,</span><span class="n">node</span><span class="w"> </span><span class="n">s2</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="n">y</span><span class="o">==</span><span class="n">s2</span><span class="p">.</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">x</span><span class="o">&lt;</span><span class="n">s2</span><span class="p">.</span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">y</span><span class="o">&lt;</span><span class="n">s2</span><span class="p">.</span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">L</span><span class="p">,</span><span class="o">&amp;</span><span class="n">W</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">x</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">a</span><span class="p">[</span><span class="o">++</span><span class="n">n</span><span class="p">].</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">].</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">a</span><span class="p">[</span><span class="o">++</span><span class="n">n</span><span class="p">].</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">].</span><span class="n">y</span><span class="o">=</span><span class="n">W</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">a</span><span class="p">[</span><span class="o">++</span><span class="n">n</span><span class="p">].</span><span class="n">x</span><span class="o">=</span><span class="n">L</span><span class="p">;</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">].</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">a</span><span class="p">[</span><span class="o">++</span><span class="n">n</span><span class="p">].</span><span class="n">x</span><span class="o">=</span><span class="n">L</span><span class="p">;</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">].</span><span class="n">y</span><span class="o">=</span><span class="n">W</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">sort</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">cmp1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x0</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">x</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y2</span><span class="o">=</span><span class="n">W</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">x2</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="n">ans</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,(</span><span class="n">x2</span><span class="o">-</span><span class="n">x0</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">y2</span><span class="o">-</span><span class="n">y0</span><span class="p">));</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">y</span><span class="o">&gt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">y2</span><span class="o">=</span><span class="n">min</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">y0</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">y0</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="p">;</span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x0</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">x</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y2</span><span class="o">=</span><span class="n">W</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="mi">-1</span><span class="p">;</span><span class="n">j</span><span class="p">;</span><span class="n">j</span><span class="o">--</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">x2</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="n">ans</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,(</span><span class="n">x2</span><span class="o">-</span><span class="n">x0</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">y2</span><span class="o">-</span><span class="n">y0</span><span class="p">));</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">y</span><span class="o">&gt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">y2</span><span class="o">=</span><span class="n">min</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">y0</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">y0</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">sort</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">cmp2</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">ans</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span><span class="n">L</span><span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span><span class="o">-</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="mi">-1</span><span class="p">].</span><span class="n">y</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">ans</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<h3 id="e06luogu-p3467-pla-postering">E06.<a href="https://www.luogu.com.cn/problem/P3467">Luogu P3467 PLA-Postering</a><a class="headerlink" href="#e06luogu-p3467-pla-postering" title="Anchor link to this section for reference">&para;</a></h3>
 
 
 
