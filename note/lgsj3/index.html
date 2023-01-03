@@ -1714,6 +1714,16 @@
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
 <h3 id="08luogu-p7167-fountain">08.<a href="https://www.luogu.com.cn/problem/P7167">Luogu P7167 Fountain</a><a class="headerlink" href="#08luogu-p7167-fountain" title="Anchor link to this section for reference">&para;</a></h3>
+<p>设水池容量和半径无限大，编号 <span class="arithmatex">\(n+1\)</span></p>
+<p>每个盘子下面流到的盘子会固定 <span class="arithmatex">\(next_i\)</span></p>
+<p>然后一直填满填满</p>
+<p>可以设 <span class="arithmatex">\(to[i][t]\)</span> 从第 <span class="arithmatex">\(i\)</span> 个圆盘开始，水溢出 <span class="arithmatex">\(2^t\)</span> 次后所达到的圆盘编号</p>
+<p>同时记录 <span class="arithmatex">\(s[i][t]\)</span> 为 <span class="arithmatex">\(2^t\)</span> 容量之和</p>
+<p><code>to[i][t]=to[to[[i][t-1]]]</code></p>
+<p><span class="arithmatex">\(to[i][0]\)</span> 则通过二分下一个盘子个数编号，通过预处理盘子最大值，判断是不是满足直径大于当前的</p>
+<p><code>s[i][t]=s[i][t-1]+s[f[i][t-1]][t-2]</code></p>
+<p>从大到小枚举 <span class="arithmatex">\(t\)</span>，记录当前编号 <span class="arithmatex">\(x\)</span>，如果溢出到圆盘，则将 <span class="arithmatex">\(x\)</span> 更新为 <span class="arithmatex">\(f[x][t]\)</span></p>
+<p>重复 <span class="arithmatex">\(log2(10^5) \approx 17\)</span> 次</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
