@@ -1722,7 +1722,7 @@
 <p><code>to[i][t]=to[to[[i][t-1]]]</code></p>
 <p><span class="arithmatex">\(to[i][0]\)</span> 则通过二分下一个盘子个数编号，通过预处理盘子最大值，判断是不是满足直径大于当前的</p>
 <p><code>s[i][t]=s[i][t-1]+s[f[i][t-1]][t-2]</code></p>
-<p>从大到小枚举 <span class="arithmatex">\(t\)</span>，记录当前编号 <span class="arithmatex">\(x\)</span>，如果溢出到圆盘，则将 <span class="arithmatex">\(x\)</span> 更新为 <span class="arithmatex">\(f[x][t]\)</span></p>
+<p>从大到小枚举 <span class="arithmatex">\(t\)</span>，记录当前编号 <span class="arithmatex">\(x\)</span>，如果溢出到圆盘，则将 <span class="arithmatex">\(x\)</span> 更新为 <span class="arithmatex">\(to[x][t]\)</span></p>
 <p>重复 <span class="arithmatex">\(log2(10^5) \approx 17\)</span> 次</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
